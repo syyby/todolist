@@ -19,4 +19,5 @@ vo（View Object）——显示层对象，通常是 Web 向模板渲染引擎�
 
 resources:
 mappers（存放sql语句）
-User已实现登陆，还需实现注册，添加todo，查看todo,创建小组等功能
+
+User已实现登陆，还需实现注册，添加todo，查看todo,创建小组等功能。对应页面为localhost：8080/login,/createtodo,...
