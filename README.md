@@ -21,3 +21,8 @@ resources:
 mappers（存放sql语句）
 
 User已实现登陆，还需实现注册，添加todo，查看todo,创建小组等功能。对应页面为localhost：8080/login,/createtodo,...
+
+postgresaql建表文件要自行创建:
+![image](https://github.com/syyby/todolist/assets/105273564/2ee950fa-b1a6-40f8-9a68-b6eefe3c658c)
+
+
