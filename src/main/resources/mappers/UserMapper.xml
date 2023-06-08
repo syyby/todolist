@@ -15,7 +15,11 @@
         from user_table
         where username = #{username} and password = #{password}
     </select>
-
+    <insert
+            id="addUser"
+    >
+        insert into user_table (username,password,email) values (#{username},#{password},#{email})
+    </insert>
 </mapper>
 
 
