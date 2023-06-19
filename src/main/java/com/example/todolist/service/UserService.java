@@ -1,6 +1,7 @@
 package com.example.todolist.service;
 
+import com.example.todolist.pojo.dto.LoginDTO;
+
 public interface UserService {
-    Boolean login(String username , String password);
-    Boolean register(String username,String password, String email);
+    public Boolean login(LoginDTO logindto);
 }

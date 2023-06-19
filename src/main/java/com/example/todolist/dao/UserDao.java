@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface UserDao {
-    UserInfo getUserInfo(@Param("username") String username , @Param("password") String password);
-    UserInfo addUser(@Param("username")String username,@Param("password")String password, @Param("email")String email);
+    int getUserInfo(@Param("username") String username , @Param("password") String password);
 }
 

@@ -5,22 +5,16 @@
 <mapper namespace="com.example.todolist.dao.UserDao">
     <select
             id="getUserInfo"
-            resultType="com.example.todolist.pojo.Do.UserInfo"
+            resultType="int"
     >
-        select
-            id,
-            username,
-            password,
-            email
+       select
+            user_table.id
         from user_table
-        where username = #{username} and password = #{password}
+       where username = cast(#{username}) and password = cast(#{password})
     </select>
-    <insert
-            id="addUser"
-    >
-        insert into user_table (username,password,email) values (#{username},#{password},#{email})
-    </insert>
 </mapper>
+
+
 
 
 
